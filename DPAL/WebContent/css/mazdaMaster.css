@@ -1,0 +1,420 @@
+/* Popup yellow alert box */
+.dynamicBoxYellow table {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+/* Main table the holds all the form elements of a form. This is the outer table that controls with rounded corners. The form table needs to have an id="FormTable"  */
+#FormTable {
+	background-color: #f8f8f8;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Required field text */
+.required-field {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+/* Form Label text that goes next to each form field. Alignment is up to the developer in the <td> */
+.form-label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00536F;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* ??? */
+.inquiry-label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000066;
+	font-weight: normal;
+}
+
+/* Text that is in a form table that is not a lebel but more of a description */
+.form-text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #F8F8F8;
+}
+
+/* Text that is in a form table that is not a lebel but more of a description. The same as the form-text class but smaller size. */
+.form-text-small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* The header text that is above each of the form-tables. Currently this is the all CAPS blue text  */
+.section-header {
+	font-family: "Century Gothic", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0099CB;
+	text-transform: uppercase;
+	padding-left: 20px;
+}
+
+/* Cell that sits behind the navigation menu. Currently this is the gray gradient below the orange line under the logo */
+.menu-bar {
+	text-align: left;
+	background-image: url(../images/menu-bar-back.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+}
+
+/* Cell that is below the logo and above the navigation on each page. Currently this is the orange line on each page */
+.header-line {
+	background-color: #FF9900;
+	height: 3px;
+}
+
+/* Future class for styled form input fields */
+input {
+	
+}
+
+/* Future class for styled form text areas */
+textarea {
+	
+}
+
+/* Future class for styled form lists */
+option {
+	
+}
+
+/* Future class for styled form buttons */
+button {
+	
+}
+
+/* This is for the headings that go within the form-tables. */
+.sub-header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+	padding-left: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;
+}
+
+/* This is the class for all links */
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #0086D7;
+	text-decoration: underline;
+	text-align: right;
+}
+
+/* This is the class for all visited links */
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #0086D7;
+	text-decoration: underline;
+	text-align: right;
+}
+
+/* Future class for form text that needs to be highlighted */
+.form-text-highlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF6633;
+}
+
+/* This is for the pagination table at the bottom of a list. The pagination table needs to have an id="Pagination" */
+#Pagination {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* This is for a layer that would display if we use a div to popup when required fields are not completely filled in. the layer needs to have id="RequiredLayer" */
+#RequiredLayer {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 481px;
+	height: 100px;
+	z-index: 1;
+	background-color: #FFF4F4;
+	border: 1px solid #FF9797;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990000;
+	margin-bottom: auto;
+}
+
+/* This is for a layer that would display a message. the layer needs to have id="messagelayer" */
+#messagelayer {
+	border: 1px solid #FF0000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: visible;
+	z-index: 5;
+	width: 450px;
+	background-color: #F9F9F9;
+}
+
+/* This is for a layer that contains the form buttons at the bottom of the screen. Needs to have id="buttonsBottom" */
+#buttonsBottom {
+	position: relative;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ??? */
+#listLayer {
+	position: fixed;
+	left: 0;
+	top: 534px;
+	width: 929px;
+	height: 317px;
+	z-index: 1;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: hidden;
+}
+
+/* Alternating row color 1 for table list */
+.table-list-text1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #FFFFFF;
+}
+
+/* Alternating row color 2 for table list */
+.table-list-text2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #F0FCFF;
+}
+
+/* This is the class that defines the column header for a list*/
+.column-header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #0086D7;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0086D7;
+	background-color: #F5F5F5;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	text-decoration: none;
+}
+
+#DataTable {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ???*/
+#RowBottomBorder {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #0086D7;
+}
+
+/* ???*/
+.column-header-sorted {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #0086D7;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0086D7;
+	background-color: #F5F5F5;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	text-decoration: underline;
+}
+
+/* This is the background color of the cell that contains the required field text. This displays when the user does not fill in a required filed*/
+.required-field-background {
+	background-color: #FFCECE;
+}
+
+/* This style is used for the site help table in the upper right of the header. Contains the Print, Close, etc. links. Needs to have id="SiteHelpTable" */
+#SiteHelpTable td {
+	padding-left: 20px;
+}
+
+/* This style is used for the main photo table on a photos screen Needs to have id="PhotoTable" */
+#PhotoTable {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0099CB;
+}
+
+/* This style is used form textbox that need to be smaller than the normal default size. Example., if the fields need to be in a list table. */
+.smallTextBox {
+	font-size: 9pt;
+}
+
+/* This style is used form list that need to be smaller than the normal default size. Example., if the fields need to be in a list table. */
+.smallListMenu {
+	font-size: 9pt;
+}
+
+/* This style is used form button that need to be smaller than the normal default size. Example., if the fields need to be in a list table. */
+#SmallButton {
+	height: 20px;
+	width: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/* This style is used in the cell that contains the logo in the header*/
+.mazda-logo {
+	background-image: url(../images/logo.gif);
+	height: 33px;
+	background-repeat: no-repeat;
+	width: 150px;
+}
+
+/* This style is used form textbox that need to be smaller than the normal default size. Example., if the fields need to be in a list table. */
+#SectionHeaderTable {
+	font-family: "Century Gothic", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0099CB;
+	text-transform: uppercase;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* This style is used for the form button table. Needs to have id="ButtonTable"*/
+#ButtonTable {
+	text-align: center;
+}
+
+/* This style is used for the form button div. Needs to have id="ButtonTable". Currently we are using the form buttons in a table and not in a div.*/
+#ButtonLayer {
+	position: relative;
+	text-align: center;
+	visibility: visible;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+
+/* This style is used for the main title table of the application in the header. Needs to have id="MainTitle"*/
+#MainTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 20px;
+}
+
+/* This style is used for the main title table of the application in the header. Needs to have id="MainTitle"*/
+#BasicSearch {
+	background-color: #E3E3E3;
+}
+
+/* This style is used for the main data table. The data table is the default search criteria box that contains the standard Mazda Dealer, Region, District fields. Needs to have id="CommonDealerNav"*/
+#CommonDealerNav {
+	position: absolute;
+	left: 49px;
+	top: 155px;
+	width: 246px;
+	height: 259px;
+	z-index: 1;
+}
+
+/* This style is used for the form labels. This version is black. */
+.form-label-black {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* This style is used for the form labels. This version is blue. */
+.form-label-blue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #003399;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* This style is used for the form labels. This version is red. */
+.form-label-red {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #990000;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* This style is used for the form labels. This version is orange. */
+.form-label-orange {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF9900;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* This style is used for the form labels. This version is gray. */
+.form-label-gray {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006666;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* This style is used for the form labels. This version is green. */
+.form-label-green {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006666;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}

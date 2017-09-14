@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>util</shortname>
+	<uri>http://interrait.com/tags</uri>
+	<info></info>
+	<function>
+		<name>contains</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>boolean contains(java.util.Collection, java.lang.Object)</function-signature>
+	</function>
+	<function>
+		<name>getMapValueForKey</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String getMapValueForKey(java.util.Map, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>compareMapValueForKey</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String compareMapValueForKey(java.util.Map, java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getDSortIndicatorImage</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String getDSortIndicatorImage()</function-signature>
+	</function>
+	<function>
+		<name>getTodaysDate</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String getTodaysDate()</function-signature>
+	</function>
+	<function>
+		<name>getEmailByWSLId</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String getEmailByWSLId(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>isValidEmail</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>boolean isValidEmail(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getListSize</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>int getListSize(java.util.List)</function-signature>
+	</function>
+	<function>
+		<name>getLinkURL</name>
+		<function-class>com.mazdausa.dealer.parts.dpal.applications.util.WebUtils</function-class>
+		<function-signature>java.lang.String getLinkURL(java.lang.String)</function-signature>
+	</function>
+</taglib>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="localloginActionForm" type="org.apache.struts.action.DynaActionForm">
+			<form-property name="userid" type="java.lang.String"></form-property>
+			<form-property name="fromCntryCd" type="java.lang.String"></form-property>
+			<form-property name="language" type="java.lang.String"></form-property>
+		</form-bean>
+		<form-bean name="backOrderForm" type="com.mazdausa.dealer.parts.dpal.applications.form.BackOrderForm"></form-bean>
+		<!--form-bean name="awaitingConfirmationForm" type="com.mazdausa.dealer.parts.dpal.applications.form.BackOrderForm"></form-bean-->
+		<!--form-bean name="awaitingConfirmationForm" type="com.mazdausa.dealer.parts.dpal.applications.form.AwaitingConfirmationForm"></form-bean-->
+		<form-bean name="processedBackOrderForm" type="com.mazdausa.dealer.parts.dpal.applications.form.ProcessedBackOrderForm"></form-bean>
+		<form-bean name="dealerDetailForm" type="com.mazdausa.dealer.parts.dpal.applications.form.DealerDetailForm"></form-bean>
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+		<exception
+			key="global.exception.message"
+			type="java.lang.Exception"
+			handler="com.mazdausa.dealer.parts.dpal.applications.common.GlobalExceptionHandler"
+			path="/dealer/parts/dpal/error.jsp" />
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+		<forward name="mainmenu" path="/dealer/parts/dpal/menu.jsp"></forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<!-- local login -->
+		<action path="/localloginaction" type="com.mazdausa.common.application.actions.LocalLoginAction"
+			name="localloginActionForm" input="/defaultlogin.jsp" className="com.mazdausa.common.application.actions.EMDCSLocalLoginActionMapping">
+			<!--set-property property="localLoginAction" value="true" /-->
+			<forward name="locallogin" path="/defaultlogin.jsp">
+			</forward>
+			<forward name="loggedIn" path="/loggedon.jsp"></forward>
+		</action>
+
+		<!-- home screen - menu -->
+		<action path="/home" type="com.mazdausa.dealer.parts.dpal.applications.action.HomeAction" scope="request">
+				<forward name="menu" path="/dealer/parts/dpal/menu.jsp"></forward>
+				<forward name="home" path="/dealer/parts/dpal/home.jsp"></forward>
+				<forward name="notification" path="/dealer/parts/dpal/notification.jsp"></forward>
+				<forward name="default" path="/home.do?aAction=menu"></forward>
+		</action>
+
+		<!-- BackOrder list -->
+		<action path="/backorderlist" name="backOrderForm" scope="request" 
+					type="com.mazdausa.dealer.parts.dpal.applications.action.BOListAction">
+			<forward name="list" path="/dealer/parts/dpal/backOrderList.jsp"></forward>
+			<forward name="default" path="/backorderlist.do"></forward>
+		</action>
+
+		<!-- Committed Orders Awaiting Confirmation Page -->
+		<action path="/awaitingconfirmation" name="backOrderForm" scope="request" 
+					type="com.mazdausa.dealer.parts.dpal.applications.action.AwaitingConfirmationAction">
+			<forward name="list" path="/dealer/parts/dpal/awaitingConfirmationList.jsp"></forward>
+			<forward name="shippingconfirmation" path="/dealer/parts/dpal/shippingconfirmation.jsp"></forward>
+			<forward name="label" path="/dealer/parts/dpal/label.jsp"></forward>
+			<forward name="labelAction" path="/labelAction.do"></forward>
+			<forward name="shipError" path="/dealer/parts/dpal/shipError.jsp"></forward>
+			<forward name="default" path="/awaitingconfirmation.do"></forward>
+		</action>
+		
+		<action path="/details" type="com.mazdausa.dealer.parts.dpal.applications.action.DealerDetailsAction" scope="request">
+		</action>
+		
+		<action path="/labelAction" type="com.mazdausa.dealer.parts.dpal.applications.action.LabelAction" scope="request">
+		</action>
+
+		<action path="/todayshippedpartlist" name="processedBackOrderForm" scope="request" 
+					type="com.mazdausa.dealer.parts.dpal.applications.action.TodayShippedPartListAction">
+			<forward name="list" path="/dealer/parts/dpal/todayShippedPartList.jsp"></forward>
+			<forward name="default" path="/todayshippedpartlist.do"></forward>
+		</action>
+		
+		<action path="/dpaladmin" name="dealerDetailForm" scope="request" type="com.mazdausa.dealer.parts.dpal.applications.action.AdminAction">
+			<forward name="list" path="/dealer/parts/dpal/admin.jsp"></forward>
+			<forward name="dealerList" path="/dealer/parts/dpal/dealerList.jsp"></forward>
+			<forward name="default" path="/dpaladmin.do"></forward>
+		</action>
+
+		<action path="/webnotification" type="com.mazdausa.dealer.parts.dpal.applications.action.WebNotificationAction" scope="request">
+		</action>
+
+	</action-mappings>
+	<controller
+		processorClass="com.mazdausa.common.application.actions.EMDCSRequestProcessor"
+		multipartClass="org.apache.struts.upload.CommonsMultipartRequestHandler">
+	</controller>
+
+	<!-- Message Resources -->
+	<message-resources parameter="com.mazdausa.application.resources.ApplicationResources"/>
+
+</struts-config>

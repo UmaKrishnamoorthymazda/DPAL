@@ -1,0 +1,391 @@
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: blue;
+	text-decoration: underline;
+	text-align: right;
+}
+
+.bottom {
+	border-bottom-style: solid;
+	border-bottom-color: orange;
+	border-bottom-width: 3px;
+}
+
+.table-font {
+	font-family: Arial;
+	font-size: 12px;
+	text-align: center;
+}
+
+.table-head-right{
+	text-align: right;
+	background-color: #DFDFDF;
+	font-weight: bold;
+}
+
+.table-content-left {
+	text-align: left;
+	background-color: #FFF;
+	font-weight: normal;
+}
+
+.column-header {
+	font-family: Arial;
+	font-size: 12px;
+	color: black;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	background-color: #C0C0C0;
+	border-top-style: solid;
+	border-top-color: black;
+}
+
+.mazda-logo {
+	width: 22%;
+}
+
+#FormTable1 {
+	font-family: Arial;
+	background-color: #f8f8f8;
+	border-color: black;
+	/*width: 99%;*/
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#FormTable {
+	background-color: white;
+	font-weight: bold;
+	/*width: 99%;*/
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#FormTable2 {
+	font-family: Arial;
+	background-color: #f8f8f8;
+	border-color: black;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.font1 {
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000000;
+	/*padding-left: 7%;*/
+}
+
+.font2 {
+	font-family: Arial;
+}
+
+.font3 {
+	font-family: Arial;
+	font-size: 13px;
+}
+
+th {
+	border-color: black;
+}
+
+td {
+	border-color: black;
+}
+.sortable-column, .sortable-column-asc, .sortable-column-dsc {
+	padding-right: 0px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sortable-column-asc {
+	padding-right: 12px;
+	background-image: url('../images/sort-asc.png');
+}
+.sortable-column-dsc {
+	padding-right: 12px;
+	background-image: url('../images/sort-dsc.png');
+}
+
+.commit {
+	width: 5%;
+}
+
+.date {
+	width: 7%;
+}
+
+.number {
+	width: 9%;
+}
+
+.description {
+	width: 17%;
+}
+
+.quantity {
+	width: 5%;
+}
+
+.inventory {
+	width: 5%;
+}
+
+.code {
+	width: 8%;
+}
+
+.name {
+	width: 17%;
+}
+
+.city {
+	width: 9%;
+}
+
+.state {
+	width: 3%;
+}
+
+.zip {
+	width: 7%;
+}
+
+.contact {
+	width: 7%;
+}
+
+#email-content1 input {
+	font-family: arial;
+	font-size: 10px;
+	height: 14px;
+	width: 200px;
+	border: 1px solid #CCC;
+}
+
+#email-content2 input {
+	font-family: arial;
+	font-size: 10px;
+	height: 14px;
+	width: 200px;
+	border: 1px solid #CCC;
+}
+
+#MainTitle {
+	/*padding-left: 14%;*/
+	padding-left: 0px;
+}
+
+#MainTitle1 {
+	padding-left: 3%;
+}
+
+.formtext {
+	font-family: Arial;
+	font-size: 11px;
+	color: black;
+}
+
+#dpal-menu-container {
+	border: 1px solid #AAA;
+	margin: 2px 2px;
+	width: 410px;
+}
+
+.dpal-menu-item,.dpal-menu-item-hover {
+	/*height: 35px;*/
+	height: 40px;
+	width: 402px;
+	position: relative;
+	/*border: solid 1px #777;*/
+	margin: 3px 3px;
+	border: solid 1px #FFF;
+	/*border-bottom: solid 1px #EEE;*/
+	border-bottom: solid 1px #F5F5F5;
+	cursor: pointer;
+	background-color: #FFF;
+}
+
+.dpal-menu-item-hover {
+	background-color: #FAFAFA;
+	/*border: solid 1px #999;*/
+	border: solid 1px #F7F7F7;
+	background-image:url(../images/menu-highlight.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+}
+
+.dpal-menu-item-container {
+	float: left;
+	margin-left: 5px;
+}
+
+.dpal-menu-item-name,.dpal-menu-item-desc {
+	font-weight: bold;
+	font-size: 14px;
+	font-family: arial;
+	color: #0086D7;
+	float: top;
+	/*margin-left: 3px;*/
+	text-align: left;
+	text-decoration: none;
+}
+
+.dpal-menu-item-desc {
+	font-size: 11px;
+	color: #AAA;
+	/*margin-left: 7px;*/
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+a.dpal-menu-item-anchor {
+	text-decoration: none;
+}
+
+#admin-table, #admin-table tr td table {
+	font-family:arial;
+	font-size:12px;
+	color:#333;
+	font-weight: bold;
+}
+
+.row-hover-highlight, .row-selected {
+	background-color: #EEE;
+}
+.row-normal {
+	background-color: #FFF;
+}
+.error-row {
+	background-color: #FDD;
+}
+.pagination-disabled {
+	color: #999;
+}
+
+.select-count {
+	font-family: arial;
+	font-size: 12px;
+	color: #777;
+	margin-left: 15px;
+	margin-top: 2px;
+}
+.error-highlight {
+	border: 1px solid #F00;
+	background-color: #FEE;
+}
+.warning-highlight {
+	background-color: #ffffc1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d9d900;
+}
+.row-valid {
+	background-color: #EFE;
+}
+.row-greater {
+	background-color: #FBF5EF;
+}
+.row-zero {
+	background-image: url('../images/stripe-disabled.png');
+	background-repeat: repeat;
+	text-decoration: line-through;
+	color: #777;
+}
+.row-skip {
+	background-color: #DDD;
+}
+.trackingNumber {
+	background-color: #FF9;
+	width: 120px;
+}
+#status-container {
+	margin: 0 auto 7px auto;
+	text-align: center;
+}
+#status {
+	color: #FFF;
+	font-size: 14px;
+	height: 16px;
+	display: inline;
+	font-family: arial;
+	padding: 2px 5px 2px 5px;
+}
+.success {
+	background-color: #7C7;
+	border: 1px solid #737
+}
+.failure {
+	background-color: #F88;
+	border: 1px solid #F55;
+}
+#dealerSelectMsg {
+	color: #FFF;
+	font-size: 11px;
+	height: 16px;
+	display: inline;
+	font-family: arial;
+	background-color: #F88;
+	border: 1px solid #F55;
+}
+/* Added for Bug id: 19 */
+.warning {
+	background-color:#FFD;
+	background-image:url('../images/warning.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left: 25px;
+	font-family:arial;
+	font-size:12px;
+	border: 1px solid #999;
+	margin-top: 10px;
+	width: 300px;
+}
+
+.error {
+	background-color: #FEE;
+	background-image: url('../images/erroricon.gif');
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+	padding: 2px 2px 2px 35px;
+	font-family: arial;
+	font-size: 12px;
+	border: 1px solid #F66;
+	/*margin-top: 10px;*/
+	width: 500px;
+}
+/* End changes */
+
+.warning-error {
+	border: 1px solid #CCC; 
+	background-color: #EEE;
+	/*background-color:#FFD;*/
+	background-image:url('../images/warning_big.png');
+	background-position:top left;
+	background-repeat:no-repeat;
+	/*padding-left: 25px;
+	font-family:arial;
+	font-size:12px;
+	border: 1px solid #999;
+	margin-top: 10px;
+	width: 300px;*/
+}
+
+.error-email {
+	border: 1px solid #F00;
+	background-color: #FEE;
+	font-family: arial;
+	font-size: 12px;
+	color: #600;
+	/*margin: 5px 0 5px 0;*/
+	display: inline;
+	font-weight: normal;
+}

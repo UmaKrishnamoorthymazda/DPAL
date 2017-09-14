@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true" threshold="error">
+
+<appender name="SharedConsole" class="com.mazdausa.common.log.MazdaCustomRollingFileAppender">
+    <param name="Threshold" value="error"/>
+    <param name="file" value="${LOG_DIR}/DPAL/DPAL.log"/>
+	<param name="dir" value="${LOG_DIR}/DPAL"/>
+    <param name="Target" value="System.out"/>
+    <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" value="%d [%X{APP_NAME}] %C [%-5p] - %m%n"/>
+    </layout>
+</appender>
+
+
+<appender name="DPAL_App" class="com.mazdausa.common.log.MazdaCustomRollingFileAppender">
+    <param name="file" value="${LOG_DIR}/DPAL/DPAL.log"/>
+	<param name="dir" value="${LOG_DIR}/DPAL"/>
+    <param name="Threshold" value="error"/>
+    <param name="Append" value="true"/>    
+    <param name="MaxFileSize" value="10MB"/>
+    <param name="maxBackupIndex" value="2"/> 
+    <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" value="%d [%X{APP_NAME}] %C [%-5p]  - %m%n"/>
+    </layout>
+</appender>
+
+<root>
+   <level value="error"/>
+   <appender-ref ref="DPAL_App"/>
+</root>
+
+</log4j:configuration>

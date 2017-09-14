@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DAOConfig>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.BackOrderDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.BackOrderDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.StatusUpdateDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.StatusUpdateDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+
+	<!-- dao interface="com.mazdausa.dealer.parts.dpal.persistence.BackOrderCommitDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.BackOrderCommitDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao-->
+
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.DealerDetailDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.DealerDetailDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.DealerDetailUpdateDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.DealerDetailUpdateDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.DealerContactInfoDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.DealerContactInfoDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.ItemAttributeDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.ItemAttributeDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationShipDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationShipDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationRemoveDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.AwaitingConfirmationRemoveDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+	<dao interface="com.mazdausa.dealer.parts.dpal.persistence.ProcessedBackOrderDAO"
+		implementation="com.mazdausa.dealer.parts.dpal.persistence.ProcessedBackOrderDAOImpl">
+		<datasource key="mazdaDS" sourceName="jdbc/mazdaDS" />
+	</dao>
+</DAOConfig>

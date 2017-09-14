@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="JavaSource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere v6 JRE"/>
+	<classpathentry kind="con" path="com.ibm.wtp.server.java.core.container/com.ibm.ws.ast.st.runtime.core.runtimeTarget.v60/was.base.v6"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-datetime.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-mailer.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/utility.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-string.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/emdcsLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/migrationLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mqlib"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/webbase.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jmsinterface.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/notification.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

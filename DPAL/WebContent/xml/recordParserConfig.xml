@@ -1,0 +1,107 @@
+
+<application name="DPAL">
+	<columns>
+		<columnName name="SalesOrder" length="6" type="String"/>
+		<columnName name="LineNumber" length="3" type="String"/>
+		<columnName name="BODate" length="10" type="Date"/>
+		<columnName name="Quantity" length="10" type="Float"/>
+		<columnName name="MyInventory" length="10" type="Float"/>
+		<columnName name="PartNumber" length="20" type="String"/>
+		<columnName name="Description" length="25" type="String"/>
+		<columnName name="DealerCode" length="5" type="String"/>
+		<columnName name="Name" length="25" type="String"/>
+		<columnName name="AddressLine1" length="25" type="String"/>
+		<columnName name="AddressLine2" length="25" type="String"/>
+		<columnName name="AddressLine3" length="25" type="String"/>
+		<columnName name="City" length="12" type="String"/>
+		<columnName name="State" length="2" type="String"/>
+		<columnName name="Zip" length="9" type="String"/>
+		<columnName name="StatusFlag" length="1" type="String"/>
+		<columnName name="Status" length="3" type="String"/>
+		<columnName name="SqlCode" length="4" type="String"/>
+		<columnName name="Message" length="50" type="String"/>
+		<columnName name="SellingDealerCode" length="5" type="String"/>
+		<columnName name="ShippedQuantity" length="10" type="String"/>
+		<columnName name="ShippingMethod" length="7" type="String"/>
+		<columnName name="TrackingNumber" length="25" type="String"/>
+	</columns>
+	<page name="CurrentBackOrderList" creator="com.mazdausa.dealer.parts.dpal.applications.util.parser.BackOrderDTOCreator">
+		<columnSequence item="1">SalesOrder</columnSequence>
+		<columnSequence item="2">LineNumber</columnSequence>
+		<columnSequence item="3">BODate</columnSequence>
+		<columnSequence item="4">Quantity</columnSequence>
+		<columnSequence item="5">MyInventory</columnSequence>
+		<columnSequence item="6">PartNumber</columnSequence>
+		<columnSequence item="7">Description</columnSequence>
+		<columnSequence item="8">DealerCode</columnSequence>
+		<columnSequence item="9">Name</columnSequence>
+		<columnSequence item="10">AddressLine1</columnSequence>
+		<columnSequence item="11">AddressLine2</columnSequence>
+		<columnSequence item="12">AddressLine3</columnSequence>
+		<columnSequence item="13">City</columnSequence>
+		<columnSequence item="14">State</columnSequence>
+		<columnSequence item="15">Zip</columnSequence>
+	</page>
+
+	<page name="ShippingConfirmation" creator="com.mazdausa.dealer.parts.dpal.applications.util.parser.BackOrderDTOCreator">
+		<columnSequence item="1">SalesOrder</columnSequence>
+		<columnSequence item="2">LineNumber</columnSequence>
+		<columnSequence item="3">BODate</columnSequence>
+		<columnSequence item="4">Quantity</columnSequence>
+		<columnSequence item="5">MyInventory</columnSequence>
+		<columnSequence item="6">PartNumber</columnSequence>
+		<columnSequence item="7">Description</columnSequence>
+		<columnSequence item="8">DealerCode</columnSequence>
+		<columnSequence item="9">Name</columnSequence>
+		<columnSequence item="10">AddressLine1</columnSequence>
+		<columnSequence item="11">AddressLine2</columnSequence>
+		<columnSequence item="12">AddressLine3</columnSequence>
+		<columnSequence item="13">City</columnSequence>
+		<columnSequence item="14">State</columnSequence>
+		<columnSequence item="15">Zip</columnSequence>
+	</page>
+
+	<page name="MessageOutput" creator="com.mazdausa.dealer.parts.dpal.applications.util.parser.MessageOutputDataBeanCreator">
+		<columnSequence item="1">Status</columnSequence>
+		<columnSequence item="2">SqlCode</columnSequence>
+		<columnSequence item="3">Message</columnSequence>
+	</page>
+
+	<page name="CommittedOrdersAwaitingShipment" creator="com.mazdausa.dealer.parts.dpal.applications.util.parser.BackOrderDTOCreator">
+		<columnSequence item="1">SalesOrder</columnSequence>
+		<columnSequence item="2">LineNumber</columnSequence>
+		<columnSequence item="3">BODate</columnSequence>
+		<columnSequence item="4">Quantity</columnSequence>
+		<columnSequence item="5">MyInventory</columnSequence>
+		<columnSequence item="6">PartNumber</columnSequence>
+		<columnSequence item="7">Description</columnSequence>
+		<columnSequence item="8">DealerCode</columnSequence>
+		<columnSequence item="9">Name</columnSequence>
+		<columnSequence item="10">AddressLine1</columnSequence>
+		<columnSequence item="11">AddressLine2</columnSequence>
+		<columnSequence item="12">AddressLine3</columnSequence>
+		<columnSequence item="13">City</columnSequence>
+		<columnSequence item="14">State</columnSequence>
+		<columnSequence item="15">Zip</columnSequence>
+	</page>
+	
+	<page name="ShippedPartsList" creator="com.mazdausa.dealer.parts.dpal.applications.util.parser.ProcessedBackOrderDTOCreator">
+		<columnSequence item="1">BODate</columnSequence>
+		<columnSequence item="2">ShippedQuantity</columnSequence>
+		<columnSequence item="3">SellingDealerCode</columnSequence>
+		<columnSequence item="4">SalesOrder</columnSequence>
+		<columnSequence item="5">LineNumber</columnSequence>
+		<columnSequence item="6">PartNumber</columnSequence>
+		<columnSequence item="7">Description</columnSequence>
+		<columnSequence item="8">ShippingMethod</columnSequence>
+		<columnSequence item="9">TrackingNumber</columnSequence>
+		<columnSequence item="10">DealerCode</columnSequence>
+		<columnSequence item="11">Name</columnSequence>
+		<columnSequence item="12">AddressLine1</columnSequence>
+		<columnSequence item="13">AddressLine2</columnSequence>
+		<columnSequence item="14">AddressLine3</columnSequence>
+		<columnSequence item="15">City</columnSequence>
+		<columnSequence item="16">State</columnSequence>
+		<columnSequence item="17">Zip</columnSequence>		
+	</page>
+</application>
